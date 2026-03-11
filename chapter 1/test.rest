@@ -6,4 +6,17 @@ GET http://localhost:3358/
 
 GET http://localhost:3358/api/dashboard
 
+
+### test
+
 GET http://localhost:3358/api/dashboard/bro
+
+### Data endpoint for adding a user
+
+POST http://localhost:3358/api/data
+Content-Type: application/json
+
+{
+    "title"  : "Joke 5",
+    "Content" : "Ek Aadmi again"
+}
