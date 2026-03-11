@@ -1,10 +1,9 @@
 import express from 'express'
-
 import dotenv from 'dotenv'
-
 import path, {dirname} from 'path'
-
 import { fileURLToPath } from 'url'
+import authRoutes from './routes/authRoutes.js'
+import todoRoutes from './routes/todoRoutes.js'
 
 
 dotenv.config({path: '../.env'})
@@ -17,6 +16,7 @@ const __dirname = dirname(__filename)
 const app = express()
 
 app.use(express.static(path.join(__dirname,'../public')))
+app.use(express.json())
 
     //setting up the frontend through the backend
 
@@ -28,7 +28,9 @@ app.use(express.static(path.join(__dirname,'../public')))
 
 
 
-
+//Routes
+app.use('/auth',authRoutes)
+app.use('/todos',todoRoutes)
 
 
 
