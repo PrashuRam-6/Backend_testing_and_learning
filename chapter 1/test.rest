@@ -1,0 +1,9 @@
+### TEST GET / WEBSITE
+
+GET http://localhost:3358/
+
+### GETTING THE API
+
+GET http://localhost:3358/api/dashboard
+
+GET http://localhost:3358/api/dashboard/bro
