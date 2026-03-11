@@ -20,3 +20,7 @@ Content-Type: application/json
     "title"  : "Joke 5",
     "Content" : "Ek Aadmi again"
 }
+
+### Deleting an element of the array
+
+DELETE http://localhost:3358/api/deleteData

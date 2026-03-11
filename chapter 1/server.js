@@ -35,7 +35,15 @@ app.get('/api/dashboard',(req,res)=>{
 })
 
 app.get('/api/dashboard/bro',(req,res)=>{
-    res.send('hello')
+    res.send(`
+        <body style="background-color: pink;">
+        <h1>Hello Bro, this is the dashboard</h1>
+        
+        <a href="/">Go back to the home page</a>
+        </body?
+        `)
+    
+
 })
 
 app.get('/',(req,res)=>{
@@ -43,6 +51,7 @@ app.get('/',(req,res)=>{
         <body style="background-color: pink;">
         <h1>Hello Bro</h1>
         <p>${JSON.stringify(data)}</p>
+        <a href="/api/dashboard/bro">Delete the last element</a>
         </body?
         `)
 })
@@ -59,6 +68,15 @@ app.post('/api/data',(req,res)=>{
 }
 )
 
+
+app.delete('/api/deleteData',(req,res)=>{
+    const deletedData = data.pop()
+
+    console.log(`Deleted the ${JSON.stringify(deletedData)} from the data array so the new data array is ${JSON.stringify(data)}`)
+    
+    
+}
+)
 
 
 
