@@ -5,18 +5,20 @@ import db from '../db.js'
 
 const router = express.Router()
 
-router.post('/addtodo',(req,res) =>{
+router.get('/',(req,res) =>{
 
 })
 
-router.get('/fetchtodo',(req,res) =>{
+router.post('/',(req,res) =>{
     
 })
 
-router.put('/edittodo',(req,res) =>{
+router.put('/:id',(req,res) =>{
     
 })
 
-
+router.delete('/:id',(req,res) =>{
+    
+})
 
 export default router
