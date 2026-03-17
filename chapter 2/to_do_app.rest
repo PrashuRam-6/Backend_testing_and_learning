@@ -8,8 +8,8 @@ POST  http://localhost:3358/auth/register
 Content-Type: application/json
 
 {
-    "username" : "rameshraju@gmail.com",
-    "password" : "12341234"
+    "username" : "abc@gmail.com",
+    "password" : "123"
 }
 
 ### For the login Routes
@@ -18,8 +18,8 @@ POST  http://localhost:3358/auth/login
 Content-Type: application/json
 
 {
-    "username" : "rameshraju@gmail.com",
-    "password" : "12341234"
+    "username" : "abc@gmail.com",
+    "password" : "123"
 }
 
 
